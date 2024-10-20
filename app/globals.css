@@ -82,4 +82,8 @@
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
   }
+  .tech-stack {
+    @apply overflow-auto
+  }
 }
+

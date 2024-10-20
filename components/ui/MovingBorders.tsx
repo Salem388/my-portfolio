@@ -7,6 +7,7 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
+import { LazyMotion,m, domAnimation} from "framer-motion";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
@@ -124,7 +125,8 @@ export const MovingBorder = ({
           ref={pathRef}
         />
       </svg>
-      <motion.div
+      <LazyMotion features={domAnimation}>
+      <m.div
         style={{
           position: "absolute",
           top: 0,
@@ -134,7 +136,8 @@ export const MovingBorder = ({
         }}
       >
         {children}
-      </motion.div>
+      </m.div>
+      </LazyMotion>
     </>
   );
 };

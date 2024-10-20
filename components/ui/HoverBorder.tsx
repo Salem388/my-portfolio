@@ -2,6 +2,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import { motion } from "framer-motion";
+import { LazyMotion,m, domAnimation} from "framer-motion";
+
 import { cn } from "@/lib/utils";
 
 type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT";
@@ -75,7 +77,8 @@ export function HoverBorderGradient({
       >
         {children}
       </div>
-      <motion.div
+      <LazyMotion features={domAnimation}>
+      <m.div
         className={cn(
           "flex-none inset-0 overflow-hidden absolute z-0 rounded-[inherit]"
         )}
@@ -93,6 +96,8 @@ export function HoverBorderGradient({
         }}
         transition={{ ease: "linear", duration: duration ?? 1 }}
       />
+      </LazyMotion>
+      
       <div className="bg-black absolute z-1 flex-none inset-[2px] rounded-[100px]" />
     </Tag>
   );

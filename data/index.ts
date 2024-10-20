@@ -1,3 +1,8 @@
+export interface navItem {
+  name: string;
+  link: string;
+}
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -8,7 +13,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I emphasize client collaboration to deliver tailored solutions.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +23,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title:
+      "Flexible in communication and always improving to stay ahead in web development.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -28,7 +34,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
+    title: "My Tech Stack",
     description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -38,7 +44,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title:
+      "A tech enthusiast committed to creating clean, responsive, and scalable web applications.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +56,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently developing a JavaScript-based healthcare management app.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,68 +79,100 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Health Care Management System",
+    des: "Streamlines patient registration, appointment scheduling, and medical records, and learn to implement complex forms and SMS notifications",
+    img: "/p1-n.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    link: "https://care-hub.vercel.app",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "AI Prompt Sharing Platform",
+    des: "Showcases Next.js features, implements a CRUD system for AI prompts, and integrates NextAuth for authentication.",
+    img: "/prompt.png",
+    iconLists: ["/next.svg", "/tail.svg", "/js.svg"],
+    link: "https://promptopia-ten-coral.vercel.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Vanlife App",
+    des: "A web app that showcases van rentals, allowing users to browse, search, and rent vehicles. It offers a smooth experience for finding vans and booking the perfect option for their next adventure.",
+    img: "/vanlife.png",
+    iconLists: ["/re.svg", "/css.svg", "/js.svg"],
+    link: "https://vanlife-22.netlify.app/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "TodoList with Drag & Drop",
+    des: "A simple interactive to-do list app that lets users add, edit, delete, reorder, and drag-and-drop tasks. Tasks can be moved between Active and Completed sections easily.",
+    img: "/todolist.png",
+    iconLists: ["/re.svg", "/ts.svg", "/css.svg"],
+    link: "https://taskify-typescript.netlify.app/",
+  },
+  {
+    id: 5,
+    title: "Guess The Word Game",
+    des: "A fun word-guessing game built using JavaScript, HTML, and CSS. The player has 6 attempts and 2 hints to guess the correct word, with feedback provided after each guess.",
+    img: "/guess-word.png",
+    iconLists: ["/html.svg", "/css.svg", "/js.svg"],
+    link: "https://venerable-praline-023a9f.netlify.app",
+  },
+  {
+    id: 6,
+    title: "Tenzy Game",
+    des: "Tenzy is a fun dice-rolling game built with React. The goal is to roll all dice until they match. You can freeze dice by clicking on them between rolls. Track your rolls and time, and aim to beat your best score!",
+    img: "/tenzy-2.png",
+    iconLists: ["/html.svg", "/css.svg", "/js.svg"],
+    link: "https://tenzy-game-salem.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "Memory Game Blocks",
+    des: "A fun memory-based game built using JavaScript, HTML, and CSS. Players flip two blocks at a time to find matching pairs. The game tracks the number of wrong attempts and displays results at the end of the game session.",
+    img: "/memory-game.jpeg",
+    iconLists: ["/html.svg", "/css.svg", "/js.svg"],
+    link: "https://salem388.github.io/memory-game-blocks/",
+  },
+  {
+    id: 8,
+    title: "Bondi Theme",
+    des: "A colorful and modern landing page designed for a small agency, converted from a Graphberry PSD template into a responsive website using HTML and Bootstrap. Featuring a clean, minimalist style with flat colors, it ensures a professional appearance across all web browsers.",
+    img: "/bondi-2.png",
+    iconLists: ["/html.svg", "/bootstrap.svg"],
+    link: "https://salem388.github.io/bonid-theme/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Salem and I collaborated on a project. He has deep technical expertise and innovative problem-solving skills. His dedication to delivering high-quality code and his proactive approach were instrumental in the project's success. Salem's ability to work both independently and collaboratively was invaluable, and he consistently met deadlines with well-crafted solutions. His clear communication and willingness to take on challenges made him a trusted team member.",
+    name: "Mohamed Rajab",
+    title: "Backend Engineer",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Salem and I collaborated on a project. He has deep technical expertise and innovative problem-solving skills. His dedication to delivering high-quality code and his proactive approach were instrumental in the project's success. Salem's ability to work both independently and collaboratively was invaluable, and he consistently met deadlines with well-crafted solutions. His clear communication and willingness to take on challenges made him a trusted team member.",
+    name: "Mohamed Rajab",
+    title: "Backend Engineer",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Salem and I collaborated on a project. He has deep technical expertise and innovative problem-solving skills. His dedication to delivering high-quality code and his proactive approach were instrumental in the project's success. Salem's ability to work both independently and collaboratively was invaluable, and he consistently met deadlines with well-crafted solutions. His clear communication and willingness to take on challenges made him a trusted team member.",
+    name: "Mohamed Rajab",
+    title: "Backend Engineer",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Salem and I collaborated on a project. He has deep technical expertise and innovative problem-solving skills. His dedication to delivering high-quality code and his proactive approach were instrumental in the project's success. Salem's ability to work both independently and collaboratively was invaluable, and he consistently met deadlines with well-crafted solutions. His clear communication and willingness to take on challenges made him a trusted team member.",
+    name: "Mohamed Rajab",
+    title: "Backend Engineer",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Salem and I collaborated on a project. He has deep technical expertise and innovative problem-solving skills. His dedication to delivering high-quality code and his proactive approach were instrumental in the project's success. Salem's ability to work both independently and collaboratively was invaluable, and he consistently met deadlines with well-crafted solutions. His clear communication and willingness to take on challenges made him a trusted team member.",
+    name: "Mohamed Rajab",
+    title: "Backend Engineer",
   },
 ];
 
@@ -173,31 +212,10 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Engineer (Side Projects)",
+    desc: "Assisted in developing several web applications using React.js and Next.js, focusing on improving interactivity and responsiveness.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
   },
 ];
 
@@ -205,13 +223,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Salem388",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://www.google.com/",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/salem-mohamed-2bbaa3245/",
   },
 ];
